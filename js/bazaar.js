@@ -1,6 +1,3 @@
-var NAME = "dAroculiao"
-var UUID = "bc425035c14846309fc7286462d35424"
-var UUID_DASHED = "bc425035-c148-4630-9fc7-286462d35424"
 var API_KEY = "f7e71d5d-ebc0-4add-bdc7-ce1b859c2ad7"
 
 const bazaar_req = new Request("https://api.hypixel.net/v2/skyblock/bazaar?key=" + API_KEY);
