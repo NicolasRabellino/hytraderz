@@ -1,0 +1,189 @@
+body {
+	width: 100%;
+	background-color: darkslategrey;
+}
+
+.bazaar {
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+
+
+}
+
+.bazaar.il {
+	color: antiquewhite
+}
+
+#ProductID {
+	text-size-adjust: 90%;
+	font-weight: bolder;
+	color: palevioletred;
+}
+
+#logo {
+	margin-bottom: 30px;
+}
+
+#TradesMainDiv {
+	font-size: larger;
+	font-family: monospace;
+	color: aliceblue;
+	background-color: black;
+	text-justify: auto;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+	height: 300px;
+	width: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+}
+
+#suggestions:empty {
+	display: none;
+}
+
+.ManipulatedItem {
+	border: 5px solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	border-radius: 10px;
+	animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+	syntax: '<angle>';
+	initial-value: 0deg;
+	inherits: false;
+}
+
+
+h1 {
+	font-family: monospace;
+	font-weight: bolder;
+}
+
+.bazaarsearcher {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+input[type="text"] {
+	background-color: #111;
+	color: #fff;
+	border: 2px solid #000000;
+	border-radius: 8px;
+	padding: 10px;
+	width: 250px;
+	font-size: 14px;
+	font-family: monospace;
+	outline: none;
+	transition: 0.2s ease;
+}
+
+#ItemSearcher {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+input[type="text"]::placeholder {
+	color: #888;
+	font-size: 12px;
+}
+
+input[type="text"]:focus {
+	border-color: #418376fb;
+	box-shadow: 0 0 8px #00ffcc44;
+}
+
+.button-31 {
+	background-color: black;
+	border-radius: 4px;
+	border-style: none;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: monospace;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	margin: 0;
+	max-width: none;
+	height: 44px;
+	min-width: 10px;
+	outline: none;
+	overflow: hidden;
+	padding: 9px 20px 8px;
+	position: relative;
+	text-align: center;
+	text-transform: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.button-31:hover,
+.button-31:focus {
+	opacity: .75;
+}
+
+#TradesMainDiv img {
+	padding-top: 30px;
+}
+
+#Trades {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#suggestions {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #333;
+	border-radius: 6px;
+	width: 260px;
+	padding: 5px;
+	margin-top: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+	font-family: monospace;
+	z-index: 10;
+}
+
+
+
+.suggestion-item {
+	padding: 5px;
+	cursor: pointer;
+}
+
+#search:focus {
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.suggestion-item:hover {
+	background-color: #eee;
+}
+
+#search-container {
+	position: relative;
+	width: 200px;
+}
